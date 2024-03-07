@@ -1,5 +1,4 @@
 import UIKit
-import SnapshotTesting
 
 public extension UIView {
     /// 텍스트 형식의 접근성 경험 스냅샷 생성 
@@ -24,10 +23,6 @@ public extension UIView {
         var allCandidate = allSubviews
         allCandidate.insert(self, at: 0)
         return allCandidate.filter { $0.isExposedToAssistiveTech }
-    }
-    
-    func mangoCaptureViewImage(view: UIView) {
-        assertSnapshot(of: view, as: .image)
     }
 }
 

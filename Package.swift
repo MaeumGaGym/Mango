@@ -13,10 +13,6 @@ let package = Package(
             name: "Mango",
             targets: ["Mango"]),
     ],
-    dependencies: [
-        .package(url: "https://github.com/pointfreeco/swift-snapshot-testing.git",
-                 from: "1.15.4")
-    ],
     targets: [
         .target(
             name: "Mango"),
